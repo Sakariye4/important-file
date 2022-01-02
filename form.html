@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./tailwind.min.css">
+</head>
+
+<body class="bg bg-gradient-to-r from-purple-800 to-pink-700">
+    <div class="bg bg-white mx-auto   max-w-md  my-8 rounded shadow-lg my-28 py-5">
+        <h1 class="text-center py-4 text-black-900 font-bold text-4xl ">Login Form</h1>
+        <div class="flex items-center justify-center">
+            <form>
+                <div class="flex justify-end items-center gap-1 ">
+                    <button class="bg bg-pink-600 hover:bg-pink-500 hover:text-gray-200 transition py-2 px-3 rounded text-white text-2xl tracking-widest  outline-none ">
+                        Login</button>
+                    <button class="bg bg-gray-200 hover:bg-pink-600 hover:text-gray-200 transition py-2 px-3 rounded text-black text-2xl tracking-widest  outline-none ">Sing
+                        Up</button>
+
+                </div>
+                    <div class="flex flex-col justify-start ">
+                        <input type="email" placeholder="Email Adress" class=" w-96 transparent focus:ring-2 focus:ring-pink-600 focus:outline-none ring-2 ring-pink-200 my-3" required>
+                        <input type="password" placeholder="Password" class=" w-96 transparent focus:ring-2 focus:ring-pink-600 focus:outline-none ring-2 ring-pink-200 my-3" required>
+                        
+                        <a href="#"   class="text-red-600 text-sm tracking-widest" >Forget password?</a>
+                        <button class="w-full bg bg-pink-600 hover:bg-pink-500 hover:text-gray-200 transition py-2 my-2  rounded text-white tracking-widest font-bold text-3xl shadow-2xl">Login</button>
+                        <div class="flex justify-center items-center gap-1">
+                            <a href="#" class="text-semi-bold">Not a Member ?</a>
+                            <a href="#" class="text-red-500">Sing up Now</a>
+
+                        </div>
+                    </div>
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>

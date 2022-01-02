@@ -1,15 +1,33 @@
- const counter = {
-     data() {
-         return{
-             counter : 0
-         }
-     },
-     mounted(){
-         setInterval(() => {
-             this.counter+=1;
-         }, 1000);
-     },
-     
+ const create = {
+      data() {
+          return {
+              Name : '',
+              attendace: [],
+
+          }
+      },
+      methods: {
+          Add(){
+              if(this.attendace === '') {
+
+              }
+              this.attendace.push(this.Name)
+
+ 
+          },
+          clear(){
+               this.Name =''
+
+          },
+          remove(ind){
+              this.attendace.splice(ind, 1)
+          }
+      },
+
  }
- const Application = Vue.createApp(counter);
- Application.mount('#apps')
+ const App = Vue.createApp(create);
+ App.mount('#apps');
+
+
+
+ 

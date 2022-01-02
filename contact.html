@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="./tailwind.min.css">
+</head>
+
+    <div class="bg-purple-500 mx-auto max-w-2xl rounded shadow py-2 px-4 text-center text-white tracking-widest text-2xl my-2">
+        Your Freinds List Contact
+    </div> 
+    <div id="app">
+        <div class="bg-purple-300 mx-auto max-w-2xl py-5 px-2 flex flex-col justify-center items-center">
+            <u>
+                <li V-for="lists in freinds" class="outline-none">
+                    
+                    {{lists.Name}}
+                   <h4>{{lists.Phone}}</h4>
+                    
+
+                </li>
+            </u>
+        </div>
+
+    </div>
+
+<body>
+ 
+    <script src="./vue.js"></script>
+    <script src="./contact.js"></script>
+</body>
+
+</html>

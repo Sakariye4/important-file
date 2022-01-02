@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tailwind.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <div id="pop">
+       <h1>  {{message}} </h1>  
+        <button v-on:click="reverseMessage">click</button>
+    </div>     -->
+    <div
+        class="bg-green-400 mx-auto flex justify-center items-center py-10 my-10 max-w-4xl shadow-lg rounded-lg text-4xl text-white traking-widest capitalize">
+        vue course goals
+    </div>
+    <div id="op"
+        class="flex flex-col justify-center  items-center max-w-4xl mx-auto my-2 bg-gray-400 shadow-2xl rounded py-10 text-2xl text-white ">
+
+        <h1 class="  border-b-4  border-green-900  text-green-700 font-bold border-blue-700 "> Event And Action</h1>
+        <div class="max-w-2xl  my-4 py-2 px-4 rounded text-green-400 text-3xl space-y-10 ">
+
+            <button V-on:click="add(10)" class="bg-pink-700 hover:bg-pink-900 text-white hover:text-gray-300 transition font-bold py-3 px-8 rounded shadow-2xl tracking-widest">Add</button>
+            <button V-on:click="Reduce(5)" class="bg-pink-700 hover:bg-pink-900 text-white hover:text-gray-300 transition font-bold py-3 px-4 rounded shadow-2xl tracking-widest mx-4">Multiplication</button>
+            <div class="bg-green-500 rounded shadow-lg py-4 px-4 text-center text-white">
+                <p V-once> Starting Counter agine: {{Counter}}</p>
+            </div>
+            <div class="bg-green-500 rounded shadow-lg py-4 px-4 text-center text-white">
+                <p>Result : {{Counter}}</p>
+            </div>
+            <input type="text"  class="focus:outline-none focus:ring-4 focus:ring-green-600  rounded ring-4 ring-green-400 shadow-lg" V-on:input="input" V-on:keyup.enter="CorfName">
+            <div class="bg-green-500 rounded shadow-lg py-4 px-4 text-center text-white" >
+                <p>your name  {{Corfirmed}}</p>
+            </div>
+            <input    V-model="Namess" type="text"  class="focus:outline-none foce:ring-4 focus:ring-red-700 rounded-lg ring-4 ring-red-300 shadow-lg"> 
+            <div class="bg-green-500 rounded shadow-lg py-4 px-4 text-center text-white" >
+                <p>your name  {{ update }}</p>
+            </div>
+            <button    V-on:click="ResetButton"  class="bg-pink-700  outline-none hover:bg-pink-900 text-white hover:text-gray-300 transition font-bold py-3 px-8 rounded shadow-2xl tracking-widest">Reset</button>
+
+            <!-- form  -->
+            <div class="bg-green-500 rounded shadow-lg py-4 px-4 text-center text-white">
+                <form V-on:submit.prevent="SubmitForm" >
+                    <input type="text" class="focus:outline-none focus:ring-4 focus-ring-green-500 ring-4 ring-green-700 text-green-900"> 
+                    <button class="bg-pink-700 py-2 px-3 text-center rounded shadow-lg">bkg</button>
+                </form>
+            </div>
+
+            
+        </div>
+
+    </div>
+    <script src="vue.js"></script>
+    <script src="sec.js"></script>
+</body>
+
+</html>
